@@ -78,8 +78,19 @@ header .heading {
   padding: .5rem;
 }
 
-
 /* articles */
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.main-article {
+  max-width: 60%;
+}
 
 /* programs */
 

@@ -1,0 +1,75 @@
+/* universal styles */
+
+html{
+  font-size: 12px;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+.box {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+
+/* header */
+
+header .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5.33rem;
+}
+
+.heading-img {
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.67rem;
+}
+
+.navigation ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.navigation li {
+  margin-right: 1.33rem;
+}
+
+/* banner */
+
+.banner {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+  width: 100%;
+  height: 25rem;
+}
+
+.banner-img {
+  /* display: flex; */
+  width: 50%;
+  margin: 2.67rem 2rem 2.67rem 2rem;
+}
+
+.banner-img img {
+  width: 100%;
+  /* height: 100% */
+}
+
+/* articles */
+
+/* programs */
+
+/* thesis */
+
+/* footer */

@@ -8,8 +8,9 @@ html{
 }
 
  img {
-  width: 100%;
-  /* max-width: 100%; */
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 video {
@@ -161,7 +162,7 @@ header .heading {
   align-items: flex-start;
 }
 
-.course {
+.course { /*fix images in desktop mode*/
   max-width: 30%;
   height: 17rem;
   margin-right: 1rem;
@@ -169,7 +170,17 @@ header .heading {
   background-color: white;
 }
 
+/* .course-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+} */
+
 .course-info {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -244,3 +255,9 @@ header .heading {
 }
 
 /* footer */
+
+footer {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

@@ -7,9 +7,17 @@ html{
   line-height: 1.2;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .box {
-  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: row ;
   width: 100%;
+  width: 100vw;
+  margin: 0 auto 0 1.5rem;
 }
 
 
@@ -61,11 +69,6 @@ header .heading {
   max-height: 100%;
 }
 
-.banner-img img {
-  width: 100%;
-  height: auto;
-}
-
 .banner-info {
   max-width: 50%
 }
@@ -82,15 +85,57 @@ header .heading {
 
 .articles {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+  padding: 2rem 0;
 }
+
+  /* left side */
 
 .main-article {
   max-width: 60%;
+  padding: 2rem 0;
+  margin-right: 1.5rem;
 }
+
+.main-info {
+  margin: 2rem 0;
+}
+
+.main-info p {
+  margin: 1.5rem 0;
+}
+
+  /* right side */
+
+.side-articles {    /*figure out picture sizes*/
+  width: 40%;
+}
+
+.side-article {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.side-img {
+  max-width: 35%;
+}
+
+.side-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+  padding-left: 1rem;
+}
+
+.side-info span {
+  margin: 0.5rem 0;
+}
+
+
+
+
 
 /* programs */
 

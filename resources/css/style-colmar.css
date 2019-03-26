@@ -7,10 +7,16 @@ html{
   line-height: 1.2;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
+ img {
+  width: 100%;
+  /* max-width: 100%; */
 }
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .box {
   display: flex;
@@ -119,7 +125,7 @@ header .heading {
 }
 
 .side-img {
-  max-width: 35%;
+  width: 35%;
 }
 
 .side-info {
@@ -155,7 +161,7 @@ header .heading {
   align-items: flex-start;
 }
 
-.course { /*figure out how to make box sizes all the same*/
+.course {
   max-width: 30%;
   height: 17rem;
   margin-right: 1rem;
@@ -175,5 +181,34 @@ header .heading {
 }
 
 /* thesis */
+
+.thesis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.main-thesis {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-video {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-videos {
+  max-width: 40%;
+}
 
 /* footer */

@@ -85,7 +85,7 @@ header .heading {
 
 .articles {
   display: flex;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
   /* left side */
@@ -133,11 +133,46 @@ header .heading {
   margin: 0.5rem 0;
 }
 
-
-
-
-
 /* programs */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4.5rem;
+  background-color: grey;
+}
+
+.courses h2 {
+  margin-bottom: 2rem;
+}
+
+.course-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.course { /*figure out how to make box sizes all the same*/
+  max-width: 30%;
+  height: 17rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.course-info span {
+  margin: 0.5rem 0;
+}
 
 /* thesis */
 

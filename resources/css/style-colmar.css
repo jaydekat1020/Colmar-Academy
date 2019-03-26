@@ -190,13 +190,17 @@ header .heading {
   padding: 2rem 0;
 }
 
+/* left side */
+
 .main-thesis {
   display: flex;
   flex-direction: row;
+  margin: 2rem 0;
 }
 
 .main-video {
   display: flex;
+  align-items: stretch;
   flex-direction: column;
   max-width: 60%;
   padding-right: 1.5rem;
@@ -207,8 +211,36 @@ header .heading {
   height: auto;
 }
 
+.video-info h6 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+/* right side */
+
 .side-videos {
   max-width: 40%;
+}
+
+.side-video {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.side-vid-img{
+  max-width: 35%;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.side-vid-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+}
+
+.side-vid-info span {
+  margin: 0.5rem 0;
 }
 
 /* footer */

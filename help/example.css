@@ -1,0 +1,56 @@
+.definable {
+  display: inline;
+}
+
+.definable .word {
+  color: #639eff;
+  transition: color 100ms ease-in;
+
+}
+
+.definable .word:hover {
+  color: #306acc;
+}
+
+.definable .definition-container {
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 4rem 2rem 4rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 1.5rem;
+  transition: top 1.5s linear 50ms,
+    opacity 1.5s linear 100ms;
+
+}
+
+.definable:hover .definition-container {
+  top: 0;
+  opacity: 1;
+}
+
+.definition-container h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.1;
+  color: #66a1ff;
+}
+
+.definition-container .information {
+  display: block;
+  line-height: 2.5;
+  color: #9b9b9b;
+}
+
+.definition-container .definitions {
+  list-style: inside decimal;
+  line-height: 1.7;
+  color: #4a4a4a;
+}

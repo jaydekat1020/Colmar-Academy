@@ -56,6 +56,10 @@ header .heading {
   margin-right: 1rem;
 }
 
+.header-mobile {
+  display: none;
+}
+
 /* banner */
 
 .banner {
@@ -260,4 +264,44 @@ footer {
   padding-top: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .box.heading {
+    display: none;
+  }
+
+  .box.header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding-left: 1rem;
+  }
+
+  .icon-pic {
+    padding-left: 2rem;
+  }
+
+  .icon-info {
+    position: absolute;
+    top: 1rem;
+    z-index: 5;
+  }
+
+  .header-icon .icon:hover {
+    opacity: 0.25;
+  }
+
+  .header-icon .icon-info {
+    opacity: 0;
+  }
+
+  .header-icon:hover .icon-info{
+    opacity: 1;
+  }
+
+
 }

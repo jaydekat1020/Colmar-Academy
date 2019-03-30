@@ -279,20 +279,22 @@ footer {
     justify-content: space-between;
     height: 4rem;
     padding-left: 1rem;
+    width: 100%;
   }
 
   .icon-pic {
-    padding-left: 2rem;
+    margin-right: 1rem;
   }
 
   .icon-info {
     position: absolute;
-    top: 1rem;
+    top: 1.15rem;
     z-index: 5;
   }
 
-  .header-icon .icon:hover {
-    opacity: 0.25;
+  .header-icon:hover {
+    opacity: 0.15;
+    transition: opacity 200ms ease-out 100ms;
   }
 
   .header-icon .icon-info {
@@ -301,6 +303,7 @@ footer {
 
   .header-icon:hover .icon-info{
     opacity: 1;
+    transition: opacity 200ms ease-in 200ms;
   }
 
 

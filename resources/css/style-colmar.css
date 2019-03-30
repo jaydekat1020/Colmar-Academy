@@ -269,6 +269,9 @@ footer {
 /* media queries */
 
 @media only screen and (max-width: 480px) and (orientation: portrait) {
+
+  /* header */
+
   .box.heading {
     display: none;
   }
@@ -305,6 +308,9 @@ footer {
     opacity: 1;
     transition: opacity 200ms ease-in 200ms;
   }
+
+/* banner */
+
 
 
 }

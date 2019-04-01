@@ -387,39 +387,8 @@ footer {
 
 /* courses */
 
-.courses {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-}
-
-.course-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.course {
-  background-color: grey;
-  max-width: 100%;
-  height: auto;
-}
-
-.course .course-img {
-  display: none;
-}
-
-.course-info {
-  text-align: center;
-  width: 100%;
-}
-
-.course-info span{
-  display: none;
-}
+  .courses {
+  }
 
 
 

@@ -272,7 +272,7 @@ footer {
   /* universal styles */
 
   .box {
-    margin-left: 1rem;
+    margin: 1rem;
   }
   /* header */
 
@@ -348,10 +348,6 @@ footer {
   .articles {
     margin: auto 0;
     padding: 0;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
   }
 
   .main-article {
@@ -380,6 +376,7 @@ footer {
 
   .side-img img{
     width: 100%;
+    height: 15rem;
   }
 
   .side-info{
@@ -387,6 +384,43 @@ footer {
     margin-left: 1rem;
     padding-bottom: 1rem;
   }
+
+/* courses */
+
+.courses {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+}
+
+.course-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.course {
+  background-color: grey;
+  max-width: 100%;
+  height: auto;
+}
+
+.course .course-img {
+  display: none;
+}
+
+.course-info {
+  text-align: center;
+  width: 100%;
+}
+
+.course-info span{
+  display: none;
+}
+
 
 
 

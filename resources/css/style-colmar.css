@@ -69,14 +69,14 @@ header .heading {
   position: relative;
   width: 100%;
   padding: 2rem 1.5rem;
-  height: 30rem;
+  height: auto;
 }
 
 .banner-img {
   display: inline-flex;
   max-width: 60%;
   margin-right: 1.5rem;
-  max-height: 100%;
+  height: auto;
 }
 
 .banner-info {
@@ -94,7 +94,6 @@ header .heading {
 /* articles */
 
 .articles {
-  display: flex;
   padding-top: 2rem;
 }
 
@@ -123,7 +122,7 @@ header .heading {
 .side-article {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 1rem;
 }
@@ -146,6 +145,7 @@ header .heading {
 /* programs */
 
 .courses {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,22 +167,21 @@ header .heading {
 
 .course { /*fix images in desktop mode*/
   max-width: 30%;
-  height: 17rem;
+  height: auto;
   margin-right: 1rem;
   margin-bottom: 2rem;
   background-color: white;
+  line-height: 1.2;
 }
 
 
 .course-info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 1rem;
+  height: 8rem;
+  display: inline-block;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
-.course-info span {
+.course-info h6 {
   margin: 0.5rem 0;
 }
 
@@ -263,6 +262,7 @@ footer {
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid grey;
 }
 
 /* media queries */
@@ -272,7 +272,8 @@ footer {
   /* universal styles */
 
   .box {
-    margin: 1rem;
+    margin: 0;
+
   }
   /* header */
 
@@ -317,12 +318,11 @@ footer {
   .banner {
     display: flex;
     flex-direction: column;
-    padding: 0;
   }
 
   .banner-img{
+    display: flex;
     max-width: 100%;
-    margin: 0 auto;
   }
 
   .banner-img img {
@@ -330,8 +330,8 @@ footer {
   }
 
   .banner-info {
-    width: 100%;
-    padding: 2rem 1rem;
+    max-width: 100%;
+    padding: 2rem 2rem 1rem 1rem;
   }
 
   .banner-info h2 {
@@ -340,7 +340,7 @@ footer {
 
   .banner-button {
     width: 100%;
-    margin-top: -top: 1.5rem;
+    margin-top: 1.5rem;
   }
 
 /* articles */
@@ -375,7 +375,7 @@ footer {
   }
 
   .side-img img{
-    width: 100%;
+    min-width: 100%;
     height: 15rem;
   }
 
@@ -431,7 +431,13 @@ footer {
     padding: 2rem 0 1rem 0;
   }
 
+  .mobile-thesis {
+    display: block;
+    width: 100%;
+  }
+
   .mobile-thesis video {
+    width: 100%;
     margin: 1rem 0 1.5rem 0;
   }
 

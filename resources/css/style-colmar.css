@@ -387,8 +387,38 @@ footer {
 
 /* courses */
 
+  .courses {
+    display: none;
+  }
 
+  .courses-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
 
+  .courses-mobile h2 {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-courses {
+    width: 100%;
+  }
+
+  .mobile-course {
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    background-color: grey;
+    color: white;
+  }
+
+  .mobile-course:hover {
+    background-color: darkgrey;
+    color: black;
+  }
 
 
 

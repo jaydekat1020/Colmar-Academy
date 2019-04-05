@@ -390,21 +390,7 @@ footer {
   .courses {
     display: none;
   }
-
-  .courses-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-  }
-
-  .courses-mobile h2 {
-    margin-bottom: 1rem;
-  }
-
-  .mobile-courses {
-    width: 100%;
+  
   }
 
   .mobile-course {

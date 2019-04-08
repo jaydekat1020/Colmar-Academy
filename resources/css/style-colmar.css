@@ -18,6 +18,9 @@ video {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
 
 .box {
   display: flex;
@@ -94,7 +97,7 @@ header .heading {
 /* articles */
 
 .articles {
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
   /* left side */
@@ -165,8 +168,8 @@ header .heading {
   align-items: flex-start;
 }
 
-.course { /*fix images in desktop mode*/
-  max-width: 30%;
+.course {
+  width: 30%;
   height: auto;
   margin-right: 1rem;
   margin-bottom: 2rem;
@@ -174,9 +177,13 @@ header .heading {
   line-height: 1.2;
 }
 
+.course-img, .course-img img {
+  width: 100%;
+}
+
 
 .course-info {
-  height: 8rem;
+  height: 9rem;
   display: inline-block;
   padding: 1rem 1rem 2rem 1rem;
 }

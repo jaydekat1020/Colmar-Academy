@@ -1,10 +1,61 @@
+/* font faces */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v19/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v17/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oswald Bold'), local('Oswald-Bold'), url(https://fonts.gstatic.com/s/oswald/v17/TK3hWkUHHAIjg75-ohoTus9C.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* universal styles */
 
 html{
   font-size: 16px;
   background-color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', 'Oswald','Open Sans', sans-serif;
   line-height: 1.2;
+  color: rgb(49, 52, 63);
 }
 
  img {
@@ -20,6 +71,7 @@ video {
 
 a {
   text-decoration: none;
+  color:rgb(49, 52, 63);
 }
 
 .box {
@@ -46,18 +98,39 @@ header .heading {
   justify-content: center;
   align-items: center;
   height: 2rem;
+  margin-right: 2rem;
+  color: rgb(49, 52, 63); /*a steel grey color which will be the secondary color of the page*/
+}
+
+.heading-img img {
+  height: 3rem;
+}
+
+.heading-img span {
+  font-size: 2rem;
+  font-family: 'Oswald';
+}
+
+.heading-img .strong {
+  color: rgb(39, 67, 161); /* a blue color, which will be the main color of the page*/
 }
 
 .navigation ul{
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .navigation li {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
+
+.navigation li:hover {
+  font-weight: bold;
+}
+
 
 .header-mobile {
   display: none;
@@ -66,13 +139,14 @@ header .heading {
 /* banner */
 
 .banner {
-  background-color: gray;
+  background-color: rgb(39, 67, 161);
   display: inline-flex;
   align-items: center;
   position: relative;
   width: 100%;
   padding: 2rem 1.5rem;
   height: auto;
+  font-size: 2.2rem;
 }
 
 .banner-img {
@@ -83,15 +157,33 @@ header .heading {
 }
 
 .banner-info {
-  max-width: 50%
+  max-width: 50%;
+  color: rgb(240, 240, 242); /*off white color for text inside blue background*/
+}
+
+.banner-info h2 {
+  margin-bottom: 2.5rem;
+  font-family: 'Oswald';
+  font-weight: bold;
+  font-size: 5rem;
+  position: relative;
 }
 
 .banner-button {
-  margin-top: 0.75rem;
-  color: white;
-  background-color: black; /*change to a dark grey*/
+  margin-top: 2rem;
+  color: rgb(240, 240, 242);
+  background-color: rgb(49, 52, 63);
   text-align: center;
   padding: .5rem;
+}
+
+.banner-button:hover {
+  top: 2rem;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 0.25rem rgb(240, 240, 242);
+  z-index: 2;
+  margin: -0.25rem 0 0 -0.25rem;
+  /* transition: all 1s linear; */
 }
 
 /* articles */
@@ -110,6 +202,12 @@ header .heading {
 
 .main-info {
   margin: 2rem 0;
+  font-size: 1.5
+}
+
+.main-info h3 {
+  color: rgb(39, 67, 161);
+  font-size: 1.5rem;
 }
 
 .main-info p {
@@ -130,6 +228,16 @@ header .heading {
   padding: 1rem;
 }
 
+.side-article:last-child, .side-article:last-child a {
+  background-color: rgb(39, 67, 161);
+  color: rgb(240, 240, 242);
+}
+
+.side-article a:hover {
+  color: rgb(49, 52, 63);
+  font-weight: bold;
+}
+
 .side-img {
   width: 35%;
 }
@@ -139,6 +247,7 @@ header .heading {
   flex-direction: column;
   max-width: 65%;
   padding-left: 1rem;
+  font-size: 1.5
 }
 
 .side-info span {
@@ -154,11 +263,14 @@ header .heading {
   justify-content: center;
   align-items: center;
   padding: 2rem 4.5rem;
-  background-color: grey;
+  background-color: rgb(39, 67, 161);
 }
 
 .courses h2 {
   margin-bottom: 2rem;
+  color: rgb(240, 240, 242);
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .course-section {
@@ -173,7 +285,8 @@ header .heading {
   height: auto;
   margin-right: 1rem;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: rgb(240, 240, 242);
+  color: rgb(49, 52, 63);
   line-height: 1.2;
 }
 
@@ -183,13 +296,22 @@ header .heading {
 
 
 .course-info {
-  height: 9rem;
+  height: 15rem;
   display: inline-block;
   padding: 1rem 1rem 2rem 1rem;
+  font-size: 1rem;
 }
 
-.course-info h6 {
+.course-info h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(39, 67, 161);
+  margin-bottom: 2rem;
+}
+
+.course-info h5 {
   margin: 0.5rem 0;
+  font-weight: bold;
 }
 
 .courses-mobile {
@@ -204,6 +326,12 @@ header .heading {
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
+}
+
+.thesis h2 {
+  color: rgb(39, 67, 161);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 /* left side */
@@ -227,8 +355,10 @@ header .heading {
   height: auto;
 }
 
-.video-info h6 {
+.video-info h4 {
   margin: 2rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: rgb(39, 67, 161);
 }
 
 /* right side */
@@ -255,6 +385,10 @@ header .heading {
   max-width: 65%;
 }
 
+.side-vid-info h6{
+  color: rgb(39, 67, 161);
+}
+
 .side-vid-info span {
   margin: 0.5rem 0;
 }
@@ -270,6 +404,10 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid grey;
+}
+
+.copyright {
+  color: rgb(39, 67, 161);
 }
 
 /* media queries */
@@ -318,6 +456,10 @@ footer {
   .header-icon:hover .icon-info{
     opacity: 1;
     transition: opacity 200ms ease-in 200ms;
+  }
+
+  .icon-pic:hover {
+    color: rgb(39, 67, 161);
   }
 
 /* banner */
@@ -392,6 +534,10 @@ footer {
     padding-bottom: 1rem;
   }
 
+  .side-info h6 {
+    font-size: 1.5rem;
+  }
+
 /* courses */
 
   .courses {
@@ -408,6 +554,9 @@ footer {
 
   .courses-mobile h2 {
     margin-bottom: 1rem;
+    color: rgb(39, 67, 161);
+    font-size: 3rem;
+    font-weight: bold;
   }
 
   .mobile-courses {
@@ -418,13 +567,26 @@ footer {
     padding: 1rem 1.5rem 1.5rem 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
-    background-color: grey;
-    color: white;
+    background-color: rgb(49, 52, 63);
+  }
+
+  .mobile-course p{
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    color:rgb(240, 240, 242);
+  }
+
+  .mobile-course:hover p {
+    display: block;
+  }
+
+  .mobile-course h3 {
+    color: rgb(240, 240, 242);
   }
 
   .mobile-course:hover {
-    background-color: darkgrey;
-    color: black;
+    background-color: rgb(39, 67, 161);
   }
 
 /* thesis exhibit */
